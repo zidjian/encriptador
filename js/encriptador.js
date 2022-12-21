@@ -18,7 +18,6 @@ function textoCorrecto( mensaje ) {
     let respuesta = true;
     mensaje_partido.map( ( elemento, indice ) => {
         if( !aceptados.includes( elemento ) ) {
-            console.log( 'false' );
             respuesta = false;
         } 
     } );
@@ -60,7 +59,6 @@ function encriptacion() {
                     separado[ indice ] = elemento.replace( valores[ 0 ][ i ], valores[ 1 ][ i ] );
                     return;
                 }
-                console.log(elemento);
             }
         } );
     }
