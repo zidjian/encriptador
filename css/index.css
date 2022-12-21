@@ -1,0 +1,357 @@
+@import url('./base.css');
+
+body {
+    flex-direction: column;
+}
+
+.principal {
+    flex-direction: column;
+}
+
+/* ---- INICIO: Cabecera ---- */
+
+.cabecera {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: var( --principal );
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.titulo h1 {
+    font-family: 'Changa';
+    font-size: 1rem;
+    color: var( --fuente-clara );
+}
+
+.titulo span {
+    font-size: .6rem;
+    color: var( --fuente-clara );
+}
+
+.mentores img {
+    height: 16px;
+    width: auto;
+}
+
+/* ---- FIN: Cabecera ---- */
+
+/* ---- INICIO: Principal ---- */
+
+.encriptador {
+    flex-direction: column;
+}
+
+.mensaje {
+    border: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    resize: vertical;
+    color: var(--principal);
+    font-size: .8rem;
+    min-height: 300px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .25), 0 1px 3px -1px rgba(0, 0, 0, .30);
+    resize: vertical;
+}
+
+.mensaje::placeholder {
+    font-family: 'Roboto';
+    color: var(--principal);
+}
+
+.mensaje:active, .mensaje:focus {
+    outline: none;
+}
+
+.alerta {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.d_none {
+    display: none;
+}
+
+.alerta i {
+    font-family: 'Font-awesome pro 5';
+    font-weight: light;
+}
+
+.alerta p {
+    font-size: .8rem;
+    color: var( --fuente-oscura );
+    margin-left: .4rem;
+}
+
+.botones {
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    padding: .5rem 2rem;
+    font-weight: medium;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    cursor: pointer;
+}
+
+.btn_principal {
+    border: none;
+    background-color: var( --principal );
+    padding: .5rem 2rem;
+    color: var( --fuente-clara );
+    font-weight: medium;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+
+.btn_secundario {
+    background: none;
+    border: solid 1px var(--principal);
+    color:  var(--principal);
+}
+
+.btn_desactivado {
+    color: var(--fuente-oscura);
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.mr-1 {
+    margin-right: .5rem;
+}
+
+/* ---- FIN: Principal ---- */
+
+/* ---- INICIO: Resultado ---- */
+
+.resultado {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background: var(--fuente-clara);
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .25), 0 1px 3px -1px rgba(0, 0, 0, .30);
+}
+
+.r_cuerpo {
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.resultado span {
+    text-align: center;
+    color: var(--principal);
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 0 0 .5rem 0;
+    text-transform: uppercase;
+}
+
+.resultado p {
+    font-size: .8rem;
+    color: var(--principal);
+    text-align: justify;
+}
+
+.resultado img {
+    display: none;
+}
+
+.sin_comentario {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start !important;
+    justify-content: baseline;
+}
+
+.sin_comentario > p {
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.r_footer {
+    text-align: center;
+}
+
+/* ---- FIN: Resultado ---- */
+
+@media screen and ( min-width: 768px ) {
+
+    .principal {
+        margin: 2rem;
+    }
+
+    /* ---- INICIO: Header ---- */
+
+    .cabecera {
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
+
+    .titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    .mentores img {
+        height: 2rem;
+        width: auto;
+    }
+
+    /* ---- FIN: Header ---- */
+
+    /* ---- INICIO: Principal ---- */
+
+    .mensaje {
+        min-height: 600px;
+        padding: 2rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
+
+    .alerta {
+        padding: 0;
+    }
+
+    .alerta i {
+        font-size: 1.5rem;
+    }
+
+    .alerta p {
+        font-size: 1rem;
+    }
+
+    /* ---- FIN: Principal ---- */
+
+    /* ---- INICIO: Resultado ---- */
+
+    .resultado {
+        margin: 0 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
+
+    .resultado span {
+        font-size: 1.5rem;
+    }
+
+    .resultado p {
+        font-size: 1rem;
+    }
+
+    /* ---- FIN: Resultado ---- */
+}
+
+@media screen and ( min-width: 1080px ) {
+
+    body {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* ---- INICIO: Header ---- */
+    
+    .principal {
+        width: 65%;
+    }
+
+    .titulo span {
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    /* ---- FIN: Header ---- */
+
+    /* ---- INICIO: Principal ---- */
+
+    .mensaje {
+        min-height: 600px;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    .alerta {
+        padding: 0;
+    }
+
+    .alerta i {
+        font-size: 1.5rem;
+    }
+
+    .alerta p {
+        font-size: 1rem;
+    }
+
+    /* ---- FIN: Principal ---- */
+
+    /* ---- INICIO: Resultado ---- */
+
+    .resultado  {
+        width: 30%;
+        margin: 2rem 2rem 0 0;
+    }
+
+    .r_cuerpo {
+        justify-content: center;
+        flex-grow: 2;
+        align-items: center;
+    }
+
+    .resultado img {
+        display: inline-block;
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .resultado span {
+        margin: 0 6rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    .resultado p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .resultado {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .r_footer {
+        height: auto;
+    }
+
+    /* ---- FIN: Resultado ---- */
+    
+}
+
+@media screen and ( min-width: 1440px ) {
+    
+}

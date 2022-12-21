@@ -1,0 +1,21 @@
+@import url('./resetear.css');
+@import url('./fuentes.css');
+
+:root {
+    --principal: #7E57C2;
+    --fuente-oscura: #424242;
+    --fuente-clara: #ffffff;
+}
+
+html {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    background: #F5F5F5;;
+}
+
+.contenedor {
+    display: flex;
+}
+

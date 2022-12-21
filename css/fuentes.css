@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Changa';
+    font-style: normal;
+    src:
+        url("./../font/ChangaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-style: normal;
+    src:
+        url("./../font/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-style: normal;
+    src:
+        url("./../font/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: normal;
+    src:
+        url("./../font/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Font-awesome pro 5';
+    font-weight: 900;
+    font-style: normal;
+    src:
+        url("./../font/Font\ Awesome\ 5\ Pro-Light-300.otf");
+}

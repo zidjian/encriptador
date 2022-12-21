@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="contenedor">
+    <div class="principal contenedor">
+        <header class="contenedor cabecera">
+            <div class="titulo">
+                <h1>Encriptador y Desencriptador</h1>
+                <span>by Waldir MAIDANA</span>
+            </div>
+            <div class="mentores">
+                <img src="./images/aluraoracle.png" alt="">
+            </div>
+        </header>
+        <main class="contenedor encriptador">
+            <textarea name=""cols="30" rows="10" placeholder="Escribe aquí..." class="mensaje" id="mensaje"></textarea>
+            <div class="contenedor alerta d_none" id="alerta">
+                <i></i>
+                <p>Solo texto en minusculas y mayusculas</p>
+            </div>
+            <div class="botones">
+                <button class="btn btn_principal mr-1" id="btn_encriptar">Encriptar</button>
+                <button class="btn btn_secundario" id="btn_desencriptar">Desencriptar</button>
+            </div>
+        </main>
+    </div>
+    <aside class="contenedor resultado">
+        <div class="contenedor r_cuerpo">
+            <img src="./images/sin_contenido.png" alt="">
+            <span>Ningún mensaje fue encontrado</span>
+            <p>Ingrese el texto que deseas encriptar o desencriptar.</p>
+        </div>
+        <div class="r_footer">
+            <button class="btn btn_secundario d_none" id="btn_copiar">Copiar</button>
+        </div>
+    </aside>
+
+    <script src="./js/encriptador.js"></script>
+</body>
+</html>
